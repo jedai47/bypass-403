@@ -1,6 +1,6 @@
 #! /bin/bash
 figlet Bypass-403
-echo "                                               By Iam_J0ker"
+echo "                                               By wlaasmi"
 echo "./bypass-403.sh https://example.com path"
 echo " "
 curl -k -s -o /dev/null -i -w "%{http_code}","%{size_download}" $1/$2
