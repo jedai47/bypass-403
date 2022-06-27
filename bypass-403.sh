@@ -4,7 +4,7 @@ echo "                                               By wlaasmi"
 echo "./bypass-403.sh https://example.com path"
 echo " "
 curl -k -s -o /dev/null -i -w "%{http_code}","%{size_download}" $1
-echo "Control"
+echo "  --> ${1} control"
 curl -k -s -o /dev/null -i -w "%{http_code}","%{size_download}" $1/$2
 echo "  --> ${1}/${2}"
 curl -k -s -o /dev/null -i -w "%{http_code}","%{size_download}" $1/%2e/$2
