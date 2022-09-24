@@ -57,3 +57,7 @@ curl -k -s -o /dev/null -i -w "%{http_code}","%{size_download}" -X TRACE $1/$2
 echo "  --> ${1}/${2} -X TRACE"
 curl -s -o /dev/null -i -w "%{http_code}","%{size_download}" -H "Host: google.com" $1/$2
 echo "  --> ${1}/${2} -H Host: google.com"
+curl -s -o /dev/null -i -w "%{http_code}","%{size_download}" -H "Host: localhost" $1/$2
+echo "  --> ${1}/${2} -H Host: localhost"
+curl -s -o /dev/null -i -w "%{http_code}","%{size_download}" -H "Host: 127.0.0.1" $1/$2
+echo "  --> ${1}/${2} -H Host: 127.0.0.1"
